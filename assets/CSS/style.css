@@ -1,0 +1,40 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    background: #163D68;
+}
+
+h1 {
+    font-family: 'Big Shoulders Text', cursive;
+    color: #DFE0DA;
+}
+
+nav {
+    font-family: 'Big Shoulders Text', cursive;
+    font-size: 30px;
+    letter-spacing: 2.5px;
+    color: white;    
+}
+
+.container {    
+    text-align: center;
+    color:white;
+    height: 500px;   
+}
+
+.footer {
+    background: #DFE0DA;
+    text-align: justify;
+    font-size: 10px;
+    padding: 50px;
+}
+
+.row {
+    font-weight: bolder;
+    font-size: 15px;
+    text-align: center;
+    padding: 15px;    
+}
+
+a:link {    
+    text-decoration: none;
+}
