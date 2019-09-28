@@ -38,3 +38,44 @@ nav {
 a:link {    
     text-decoration: none;
 }
+
+button {
+    font-family: 'Big Shoulders Text', cursive;
+    font-size: 30px;
+    background: #DFE0DA;
+    color: #163D68;
+    border-radius: 10px;
+    margin: 5px;   
+}
+
+button:focus {
+    background: #C59D73;
+    border: 5px solid gray;
+    outline: none;
+}
+
+.popup-content {
+    font-family: 'Big Shoulders Text', cursive;
+    background: #DFE0DA;
+    color: #163D68;
+    text-align: justify;
+    font-size: 20px;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.popup-overlay {
+    visibility:hidden;
+}
+    
+.popup-content {
+    visibility:hidden;
+}
+
+.popup-overlay.active{
+    visibility:visible;
+}
+    
+.popup-content.active {
+    visibility:visible;
+}
