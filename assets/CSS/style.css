@@ -12,13 +12,14 @@ nav {
     font-family: 'Big Shoulders Text', cursive;
     font-size: 30px;
     letter-spacing: 2.5px;
-    color: white;    
+    color: white;
 }
 
-.container {    
+.container {
     text-align: center;
-    color:white;
-    height: 500px;   
+    color: white;
+    height: auto;
+    padding: 50px 5px;
 }
 
 .footer {
@@ -32,10 +33,10 @@ nav {
     font-weight: bolder;
     font-size: 15px;
     text-align: center;
-    padding: 15px;    
+    padding: 15px;
 }
 
-a:link {    
+a:link {
     text-decoration: none;
 }
 
@@ -45,7 +46,7 @@ button {
     background: #DFE0DA;
     color: #163D68;
     border-radius: 10px;
-    margin: 5px;   
+    margin: 5px;
 }
 
 button:focus {
@@ -54,28 +55,25 @@ button:focus {
     outline: none;
 }
 
-.popup-content {
+ul,
+#popup {
     font-family: 'Big Shoulders Text', cursive;
     background: #DFE0DA;
     color: #163D68;
-    text-align: justify;
     font-size: 20px;
-    padding: 5px;
+    padding: 10px 50px;
     border-radius: 10px;
+    margin-top: 10px;
+    width: 100%;
+    list-style: none;
 }
 
-.popup-overlay {
-    visibility:hidden;
-}
-    
-.popup-content {
-    visibility:hidden;
+li {
+    text-align: left;
+    padding: 10px 2px;
 }
 
-.popup-overlay.active{
-    visibility:visible;
-}
-    
-.popup-content.active {
-    visibility:visible;
+i {
+    font-size: 30px;
+    padding-right: 10px;
 }
