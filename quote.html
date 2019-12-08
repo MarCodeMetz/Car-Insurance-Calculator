@@ -29,34 +29,31 @@
                     <h2>Car Type</h2>
                     <p>Please, select your car type:</p>
                     <select required name="carType" id="carType">
-                        <option value="sedan">Sedan/Wagon</option>
-                        <option value="van">Van/Crossover</option>
-                        <option value="truck">Truck/Pickup</option>
-                        <option value="sport">Coupe/Sports Car</option>
-                        <option value="luxury">Luxury Car</option>
+                        <option value=250>Sedan/Wagon</option>
+                        <option value=300>Van/Crossover</option>
+                        <option value=350>Truck/Pickup</option>
+                        <option value=400>Coupe/Sports Car</option>
+                        <option value=450>Luxury Car</option>
                     </select>
-                    <br><br>
-                    <input type="submit">
+
                 </div>
                 <div class="col-md-4">
                     <h2>Primary Use</h2>
                     <p>Please, select how you use the car:</p>
                     <select required name="carUse" id="carUse">
-                        <option value="personal">Personal</option>
-                        <option value="business">Business</option>
+                        <option value=50>Personal</option>
+                        <option value=100>Business</option>
                     </select>
-                    <br><br>
-                    <input type="submit">
+
                 </div>
                 <div class="col-md-4">
                     <h2>Own or lease?</h2>
                     <p>Please, select if the car is leased or owned:</p>
                     <select required name="carOwner" id="carOwner">
-                        <option value="finance">Financed/leased</option>
-                        <option value="own">Owned</option>
+                        <option value=100>Financed/leased</option>
+                        <option value=25>Owned</option>
                     </select>
-                    <br><br>
-                    <input type="submit">
+
                 </div>
             </div>
             <div class="row">
@@ -65,58 +62,97 @@
                     <p>Pays for property damages and injuries you cause to others while driving. You’re also covered for court/attorney costs.</p>
                     <p><strong>Example:</strong> You rear-end another car, causing damage to the vehicle and injuring the driver. We'll pay for, up to your policy’s limits, the other driver's car repairs and injuries, plus costs from any potential lawsuit.
                         There’s no deductible for liability.</p>
+                    <p>Please, select liability coverage:</p>
+                    <select required name="liability" id="liability">
+                        <option value=80>basic ($1 mio.)</option>
+                        <option value=200>gold ($50 mio.)</option>
+                        <option value=500>platinum ($100 mio.)</option>
+                    </select>
                 </div>
                 <div class="col-md-4">
                     <h2>Compre-<br>hensive</h2>
                     <p>Comprehensive pays to repair or replace your car if it’s damaged from an incident out of your control: theft, vandalism, hitting an animal, fire, acts of nature, and glass damage.</p>
                     <p><strong>Example:</strong> Your car is totaled during a major hailstorm while parked outside. If you have comprehensive, we'll pay you the value of your car, minus your deductible. </p>
-
+                    <p>Please, select Comprehensive coverage:</p>
+                    <select required name="comp" id="comp">
+                        <option value=0>I wish no Comprehensive coverage</option>
+                        <option value=0>$0 deductible</option>
+                        <option value=150>$150 deductible</option>
+                        <option value=300>$300 deductible</option>
+                        <option value=500>$500 deductible</option>
+                        <option value=1000>$1.000 deductible</option>
+                        <option value=2500>$2.500 deductible</option>
+                    </select>
                 </div>
                 <div class="col-md-4">
                     <h2>Collision</h2>
                     <p>Collision covers damages to your vehicle if you’re in an accident, regardless of fault.</p>
                     <p><strong>Example:</strong> You back out of your garage, hit your basketball hoop, and cause $2,000 worth of damage to your vehicle. With collision, we’ll pay to repair your vehicle, minus your deductible.
                     </p>
+                    <p>Please, select Collision coverage:</p>
+                    <select required name="coll" id="coll">
+                        <option value=0>I wish no Collision coverage</option>
+                        <option value=0>$0 deductible</option>
+                        <option value=150>$150 deductible</option>
+                        <option value=300>$300 deductible</option>
+                        <option value=500>$500 deductible</option>
+                        <option value=1000>$1.000 deductible</option>
+                        <option value=2500>$2.500 deductible</option>
+                    </select>
                 </div>
             </div>
             <div class="row-12">
                 <button class="calc-btn">Calculate!</button>
             </div>
+            <!--hidden result window, pops up when calculate button gets prompted-->
+            <div class="result">
+                <h2>Here is your Quote!</h2>
+
+                <p>This Quote is an estimate based on the following informations and coverages:</p>
+                <div>
+                    <li>
+                        <ul>Vehicle:</ul>
+                        <ul>Primary use:</ul>
+                        <ul>Lorem ipsum:</ul>
+                        <ul>Coverage:</ul>
+                    </li>
+                </div>
+            </div>
+            <!--end of result window-->
         </div>
+
     </div>
 
-</div>
-
-<div class="foto">
-    <img src="assets/IMG/highway.jpg" alt="highway in the dessert" width="100%">
-</div>
-
-<div class="footer">
-    <hr>
-    <div class="row">
-        <div class="col-md-4">
-            <a href="">PRIVACY & SECURITY</a>
-        </div>
-        <div class="col-md-4">
-            <a href="">TERMS OF USE</a>
-        </div>
-        <div class="col-md-4">
-            <a href="">CONTACT US</a>
-        </div>
+    <div class="foto">
+        <img src="assets/IMG/highway.jpg" alt="highway in the dessert" width="100%">
     </div>
-    <p class="text-center">Copyright 2019. Star Insurance Company. All Rights Reserved. We offer insurance by phone, online and through independent agents. Prices vary based on how you buy. National average annual car insurance savings by new customers surveyed who saved with
-        Star Insurance in 2018. *Discount varies and may not be available in all states or situations.
-    </p>
-    <br>
-    <hr>
-</div>
 
-<body>
+    <div class="footer">
+        <hr>
+        <div class="row">
+            <div class="col-md-4">
+                <a href="">PRIVACY & SECURITY</a>
+            </div>
+            <div class="col-md-4">
+                <a href="">TERMS OF USE</a>
+            </div>
+            <div class="col-md-4">
+                <a href="">CONTACT US</a>
+            </div>
+        </div>
+        <p class="text-center">Copyright 2019. Star Insurance Company. All Rights Reserved. We offer insurance by phone, online and through independent agents. Prices vary based on how you buy. National average annual car insurance savings by new customers surveyed who saved
+            with Star Insurance in 2018. *Discount varies and may not be available in all states or situations.
+        </p>
+        <br>
+        <hr>
+    </div>
 
-    <script src="assets/JS/Librarie/jquery-3.4.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    <script src="assets/JS/script.js"></script>
-</body>
+    <body>
+
+        <script src="assets/JS/Librarie/jquery-3.4.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <script src="assets/JS/script.js"></script>
+    </body>
 
 </html>
